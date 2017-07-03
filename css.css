@@ -1,0 +1,36 @@
+*{
+	margin: 0;	
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+}
+
+:root{
+	--green-color: #77cc66;
+}
+
+h1{
+	font-family: 'Exo', sans-serif;
+}
+
+hr{
+	margin: 5px 0;
+	height: 1px;
+	border: 0;
+	background: #333;
+	background-image: linear-gradient(to right,#eee,#333,#eee);
+}
+
+hr.dotted{
+	height: 0px;
+	 border-bottom: 1px dashed #ccc;
+	 background: #999;
+}
+
+.sucess{
+	background: var(--green-color);
+}
+/*
+.sucess:hover{
+	background: var(--green-color);
+}*/

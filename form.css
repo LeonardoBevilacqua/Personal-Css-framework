@@ -1,0 +1,198 @@
+fieldset{
+	border: #ddd 2px groove;
+	border-radius: 2px;
+	padding:5px;
+	box-shadow: 2px 2px 3px #ccc;
+}
+
+legend{
+	padding:0 3px;
+	border: #ddd 2px groove;
+	border-radius: 5px;
+	font: 90% 'Exo', sans-serif;
+	color: #444;
+}
+
+.button,
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+input[type="color"],
+textarea,
+select{
+	outline:none;
+}
+
+.button {
+	margin: 5px;
+	padding: 5px 10px;
+	background-color: #ccc;
+	border: 1px solid #eee;
+	font: 19px sans-serif;
+	letter-spacing: 1px;
+	color:#333;
+	-webkit-transition: background-color .7s, border .7s;
+	   /*-moz-transition: background-color .7s, border .7s;
+	     -o-transition: background-color .7s, border .7s;
+	    -ms-transition: background-color .7s, border .7s;*/
+	        transition: background-color .7s, border .7s;
+	/*cursor: pointer;*/
+}
+
+.button:hover{
+	background-color: #eee;
+	border: 1px solid #ccc;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+input[type="color"],
+textarea,
+select{
+   height: 25px;
+   padding: 2px 5px;
+   margin: -3px 0;
+   border: 1px solid #999;
+   border-radius: 2px;
+   box-shadow: 2px 2px 3px #ccc;
+   -webkit-transition: border-color .7s;
+   transition: border-color .7s;
+}
+
+select {
+  padding-right: 2.5em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+    background-image:
+    linear-gradient(45deg, transparent 50%, #555 50%),
+    linear-gradient(135deg, #555 50%, transparent 50%),
+    linear-gradient(to right, #ddd, #ddd);
+  background-position:
+    calc(100% - 12px) calc(100% - 8px),
+    calc(100% - 07px) calc(100% - 8px),
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    25px 25px;
+  background-repeat: no-repeat;
+}
+
+/* arrows */
+select:focus {
+  background-image:
+    linear-gradient(135deg, #fff 50%, transparent 50%),
+    linear-gradient(45deg, transparent 50%, #fff 50%),
+    linear-gradient(to right, #777, #777);
+  background-position:
+    calc(100% - 07px) calc(100% - 8px),
+    calc(100% - 12px) calc(100% - 8px),    
+    100% 0;
+}
+
+textarea{
+	height: 75px;
+}
+
+.notResizable{
+	resize: none;
+}
+
+input[type="radio"] {
+	visibility: hidden;
+	margin-right: 8px;
+	cursor: pointer;
+}
+
+input[type="radio"]:before {
+	content: " ";
+	#background-color: #ccc;
+	display: inline-block;
+	margin-right: 15px;
+	width: 6px;
+	height: 6px;
+	border: 3px solid #fff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	visibility: visible;
+	box-shadow: 0 0 0px 2px #999;
+	
+	-webkit-transition: background-color .3s;
+   	transition: background-color .3s;
+}
+
+input[type="radio"]:checked:before {
+	background-color: #555;
+}
+
+input[type="checkbox"] {
+	visibility: hidden;
+	margin-right: 8px;
+	cursor: pointer;
+}
+
+input[type="checkbox"]:before {
+	content: " ";
+	#background-color: #ccc;
+	display: inline-block;
+	margin-right: 15px;
+	width: 6px;
+	height: 6px;
+	border: 3px solid #fff;
+	visibility: visible;
+	box-shadow: 0 0 0px 2px #999;
+	
+	-webkit-transition: background-color .3s;
+   	transition: background-color .3s;
+}
+
+input[type="checkbox"]:checked:before {
+	background-color: #555;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="color"]:focus,
+textarea:focus,
+select:focus{
+   border-color: #444;
+}
+
+[class*="col-"] > input[type="text"],
+[class*="col-"] > input[type="password"],
+[class*="col-"] > input[type="number"],
+[class*="col-"] > input[type="date"],
+[class*="col-"] > input[type="email"],
+[class*="col-"] > input[type="color"],
+[class*="col-"] > textarea,
+[class*="col-"] > select{
+	width: 100%;
+}
+
+@media only screen and (min-width: 600px){
+	.label{
+	   text-align: left;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.label{
+	   text-align: right;
+	}
+}
+
+/*temp input::-webkit-calendar-picker-indicator*/
+

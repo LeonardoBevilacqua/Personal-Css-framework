@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Index</title>	
+	<link href="grid.css" rel="Stylesheet"> 
+	<link href="form.css" rel="Stylesheet"> 
+	<link href="css.css" rel="Stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Exo:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+</head>
+<body>
+<div class="grid-container">
+<!-- Header -->
+	<h1>H1 Title</h1>
+	<h2>H2 Title</h2>
+	<h3>H3 Title</h3>
+	<h4>H4 Title</h4>
+	<h5>H5 Title</h5>
+	<h6>H6 Title</h6>
+
+<!-- Content -->
+	<p>This is a paragraph.</p>
+
+	<div>
+		<p>This is a paragraph inside a DIV.</p>
+	</div>
+
+<!-- form -->
+	<form oninput="output.value=parseInt(inputRange.value)">
+		<fieldset>
+		<legend>Formulario</legend>		
+		<div class="grid-row">
+			<label for="inputText" class="label grid-col-2">Input Text</label> 
+			<div class="grid-col-10"> 
+				<input type="text" name="inputText" id="inputText" class="">
+			</div>
+		</div>	
+		<div class="grid-row">
+			<label for="inputSelect" class="label grid-col-1 grid-offset-1">Select: </label>
+			<div class="grid-col-4">
+		 		<select name="inputSelect" id="inputSelect" class="">
+					<option value="volvo">Volvo</option>
+					<option value="saab">Saab</option>
+					<option value="fiat">Fiat</option>
+					<option value="audi">Audi</option>
+					<option value="audi">Audisssssssssss1111111</option>
+				</select>
+			</div>
+		</div>
+		<div class="grid-row">
+			<label for="inputPass" class="label grid-col-2">Input Password</label> 
+			<div class="grid-col-4">
+				<input type="password" name="inputPass" id="inputPass">
+			</div>
+			
+			<label for="inputTextData" class="label grid-col-3">Input Text with data list</label> 
+			<div class="grid-col-3">
+				<input type="text" name="inputTextData" id="inputTextData" list="data"> 
+				<datalist id="data">
+	        		<option value="Internet Explorer">
+	        		<option value="Firefox">
+	        		<option value="Chrome">
+	        		<option value="Opera">
+	        		<option value="Safari">
+	        		</datalist> 
+			</div>
+		</div>
+		<div class="grid-row">
+			<label for="inputNumber" class="label grid-col-2">Input Number</label>
+			<div class="grid-col-4">
+				<input type="number" name="inputNumber" id="inputNumber">
+			</div>
+			<label for="inputColor" class="label grid-offset-1 grid-col-2">Input Color</label>
+			<div class="grid-col-3">
+				<input type="color" name="inputColor" id="inputColor"> 
+			</div>
+		</div>
+		<div class="grid-row">
+			<label for="inputDate" class="label grid-col-2">Input Number</label>
+			<div class="grid-col-4">
+				<input type="date" name="inputDate" id="inputDate">
+			</div>
+			<label for="inputEmail" class="label grid-col-2">Input Email</label> 
+			<div class="grid-col-4">
+				<input type="email" name="inputEmail" id="inputEmail">
+			</div>
+		</div>
+		<hr>
+		<div class="grid-row">
+			<label for="inputTextarea" class="label grid-col-2"> Text Area </label>
+			<div class="grid-col-10">
+				<textarea name="inputTextarea" id="inputTextarea" class="notResizable"> Text here . . . </textarea>
+			</div>
+		</div>
+		<div class="grid-row">
+			<div class="grid-col-2">
+				<input type="radio" name="inputRadio" value="male" id="radioMale" checked> <label for="radioMale">Male</label> <br>
+	 			<input type="radio" name="inputRadio" value="female" id="radioFemale"> <label for="radioFemale">Female</label> 
+			</div>
+			<div class="grid-col-2">
+				<input type="checkbox" name="inputCheck" value="cat" id="checkCat"> <label for="checkCat">Cat</label> <br>
+	 			<input type="checkbox" name="inputCheck" value="dog" id="checkDog"> <label for="checkDog">Dog</label>
+			</div>
+		</div>		
+		<hr class="dotted">
+		 	 	
+	 	<input class="button sucess" type="submit" name="submitBtn">
+	 	<input class="button" type="reset" name="resetBtn">
+	 	<input class="button" type="button" onclick="alert('Hello World!')" value="Click Me!">
+		</fieldset>
+	</form> 
+</div>
+<script> </script>
+</body>
+</html>
