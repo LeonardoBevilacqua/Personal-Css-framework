@@ -6,7 +6,12 @@
 }
 
 :root{
-	--green-color: #77cc66;
+	--light-green-color: #99ee88;
+	--dark-green-color: #77cc66;
+	--light-red-color: #ee8877;
+	--dark-red-color: #cc6655;
+	--light-orange-color: #ffaa44;
+	--dark-orange-color: #dd8822;
 }
 
 h1{
@@ -27,10 +32,53 @@ hr.dotted{
 	 background: #999;
 }
 
-.sucess{
-	background: var(--green-color);
+a.button{
+	text-decoration: none;
 }
-/*
-.sucess:hover{
-	background: var(--green-color);
-}*/
+
+.button {
+	margin: 5px;
+	padding: 5px 10px;
+	background-color: #ccc;
+	border: 1px solid #eee;
+	font: 19px sans-serif;
+	letter-spacing: 1px;
+	color:#333;
+	-webkit-transition: background-color .7s, border .7s;
+	   /*-moz-transition: background-color .7s, border .7s;
+	     -o-transition: background-color .7s, border .7s;
+	    -ms-transition: background-color .7s, border .7s;*/
+	        transition: background-color .7s, border .7s;
+	/*cursor: pointer;*/
+	display: inline-block;
+	outline:none;
+}
+
+.button:hover{
+	background-color: #eee;
+	border: 1px solid #ccc;
+}
+
+.green{
+	background: var(--dark-green-color);
+}
+
+.green:hover{
+	background: var(--light-green-color);
+}
+
+.red{
+	background: var(--dark-red-color);
+}
+
+.red:hover{
+	background: var(--light-red-color);
+}
+
+.orange{
+	background: var(--dark-orange-color);
+}
+
+.orange:hover{
+	background: var(--light-orange-color);
+}
