@@ -23,7 +23,7 @@ input[type="color"],
 textarea,
 select{
 	outline:none;
-	font-size: 90%;
+	font-size: 80%;
 	color: #000;
 }
 
