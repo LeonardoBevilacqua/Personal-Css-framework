@@ -1,0 +1,6 @@
+.panel{
+	margin: 25px auto;
+	background: red;
+	width:500px;
+	min-width: 500px;
+}

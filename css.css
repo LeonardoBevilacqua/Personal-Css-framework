@@ -49,7 +49,7 @@ a.button{
 	     -o-transition: background-color .7s, border .7s;
 	    -ms-transition: background-color .7s, border .7s;*/
 	        transition: background-color .7s, border .7s;
-	/*cursor: pointer;*/
+	cursor: pointer;
 	display: inline-block;
 	outline:none;
 }
