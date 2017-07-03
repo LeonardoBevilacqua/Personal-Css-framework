@@ -23,6 +23,8 @@ input[type="color"],
 textarea,
 select{
 	outline:none;
+	font-size: 90%;
+	color: #000;
 }
 
 .button {
