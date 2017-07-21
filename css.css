@@ -52,8 +52,13 @@ a.button{
 	cursor: pointer;
 	display: inline-block;
 	outline:none;
-}
-
+	
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}       
+        
 .button:hover{
 	background-color: #eee;
 	border: 1px solid #ccc;
