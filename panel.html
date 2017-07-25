@@ -1,3 +1,6 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="grid.css" rel="Stylesheet"> 
 <link href="form.css" rel="Stylesheet"> 
 <link href="css.css" rel="Stylesheet">
@@ -5,10 +8,46 @@
 <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 
 <link href="panel.css" rel="Stylesheet">
+<link href="navbar.css" rel="Stylesheet">
+</head>
+<body>
+<nav class="navbar">
+	<div class="grid-container fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" id="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span>&#9776;</span>
+                	</button>                	
+			<a class="navbar-brand" href="#">Link</a>
+		</div>
+		<div class="navbar-body" id="navbar-body">
+			<ul class="navbar-left">
+				<li><a href="navbar.html">navbar.html</a></li>
+      				<li><a href="index.html">index.html</a></li>
+      				<li><a href="panel.html" class="active">panel.html</a></li>
+      				<li class="dropdown">
+      					<a href="#">Dropdown</a>
+      					<ul class="nav-dropdown-content">
+      						<li><a href="#">link</a></li>
+      						<li><a href="#">link</a></li>
+      						<li><a href="#">link</a></li>
+      					</ul>
+      				</li>
+			</ul>
+			<ul class="navbar-right"> <!-- nav navbar-nav navbar-right -->
+    			  	<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+    				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    			</ul>		
+		</div>
+	</div>
+</nav>
+
 
 <div class="panel">
 	<div class="panel-header"><h2>Header Panel</h2></div>
-	<div class="panel-body"><p>body</p></div>
+	<div class="panel-body">
+		<p>body</p>
+		<input type="checkbox"> <label>Hello</label>
+	</div>
 </div>
 
 <div class="panel panel-success">
@@ -50,3 +89,6 @@
 		</div>			
 	</div>
 </div>
+<script type="text/javascript" src="navbar.js"></script>
+</body>
+</html>
