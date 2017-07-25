@@ -128,10 +128,17 @@ nav div,
 		position: relative;
 		box-shadow: none;
 		border: 1px solid #303030;
+		visibility: visible;
+    		opacity:1;
+    		filter:alpha(opacity=100);
 		display: none;
 	}
 	
-	.dropdown:hover .nav-dropdown-content {
-	    	display: initial;
+	.nav-dropdown-content.responsive{
+		display: initial;
 	}
+	
+	/*.dropdown:hover .nav-dropdown-content {
+	    	display: none;
+	}*/
 }
