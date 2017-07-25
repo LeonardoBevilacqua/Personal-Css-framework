@@ -1,5 +1,6 @@
 document.getElementById("navbar-toggle").onclick = function(){
-	var body = document.getElementById("navbar-body");	
+	var body = document.getElementById("navbar-body");
+	this.classList.toggle("change");	
 	if(body.className === "navbar-body"){
 		body.className += " responsive";
 	}
