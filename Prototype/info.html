@@ -96,7 +96,7 @@ div.info.closed{
 </nav>
 
 <div class="info">
- 	<span class="close" id="close">x</span>
+ 	<span class="close">x</span>
 	<h2>Title</h2>
 	<p>Some random bullsh*t here that means nothing so please go away. fanks</p>
 </div>
@@ -148,10 +148,11 @@ div.info.closed{
 
 <script type="text/javascript" src="navbar.js"></script>
 <script>
-	document.getElementById("close").onclick = function(){
-	var body = document.getElementById("close").parentElement;
-	body.className += " closed";
-}    
+	document.body.onclick= function(e){
+		e=window.event? event.srcElement: e.target;
+		if(e.className && e.className.indexOf('close')!=-1)e.parentElement.className += " closed";;
+	}
+    
 </script>
 </body>
 </html>
