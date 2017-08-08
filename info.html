@@ -1,64 +1,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="grid.css" rel="Stylesheet"> 
-<link href="form.css" rel="Stylesheet"> 
-<link href="css.css" rel="Stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Exo:400,700" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
-
-<link href="panel.css" rel="Stylesheet">
-<link href="navbar.css" rel="Stylesheet">
-
-<style>
-div.info{
-	padding: 12px;
-	background: #ccc;
-	border: 2px solid #eee;
-	margin: 5px auto;
-}
-
-div.info .close{
-	float:right;
-	font-size: 28px;
-	font-weight:bold;	
-	cursor: pointer;
-}
-
-div.info.info-sucess{
-	background: #77cc66;
-	border-color:#99ee88;
-	color: #006600;
-}
-
-div.info.info-sucess h1 h2 h3 h4 h5 h6{
-	color: #004400;
-}
-
-div.info.info-warning{
-	background: #dd8822;
-	border-color:#ffaa44;
-	color: #660000;
-}
-
-div.info.info-warning h1 h2 h3 h4 h5 h6{
-	color: #440000;
-}
-
-div.info.info-error{
-	background: #cc6655;
-	border-color:#ee8877;
-	color: #990000;
-}
-
-div.info.info-error  h1 h2 h3 h4 h5 h6{
-	color: #770000;
-}
-
-div.info.closed{
-	display:none;
-}
-</style>
+<link href="css/shadow.min.css" rel="Stylesheet"> 
 
 </head>
 <body>
@@ -70,7 +13,7 @@ div.info.closed{
 				<div class="bar1"></div>
   				<div class="bar2"></div>
   				<div class="bar3"></div>
-                	</button>                	
+                	</button>
 			<a class="navbar-brand" href="#">Link</a>
 		</div>
 		<div class="navbar-body" id="navbar-body">
@@ -90,7 +33,7 @@ div.info.closed{
 			<ul class="navbar-right"> <!-- nav navbar-nav navbar-right -->
     			  	<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
     				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    			</ul>		
+    			</ul>
 		</div>
 	</div>
 </nav>
@@ -152,7 +95,7 @@ div.info.closed{
 		e=window.event? event.srcElement: e.target;
 		if(e.className && e.className.indexOf('close')!=-1)e.parentElement.className += " closed";;
 	}
-    
+
 </script>
 </body>
 </html>
