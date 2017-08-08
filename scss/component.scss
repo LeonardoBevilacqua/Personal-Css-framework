@@ -1,0 +1,80 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Raleway', sans-serif;
+}
+
+h1,h2{
+      font-family: 'Exo', sans-serif;
+}
+
+hr{
+      margin: 5px 0;
+      height: 1px;
+      border: 0;
+      background: $dark-black-color;
+      background-image: linear-gradient(to right,$light-black-color,$dark-black-color,$light-black-color);
+}
+
+hr.dotted{
+      height: 0px;
+      border-bottom: 1px dashed $dark-grey-color;
+      background: #999;
+}
+
+a.button{
+      text-decoration: none;
+}
+
+.button {
+      margin: 5px;
+      padding: 5px 10px;
+      background-color: $dark-grey-color;
+      border: 1px solid $light-black-color;
+      font: 19px sans-serif;
+      letter-spacing: 1px;
+      color:$dark-black-color;
+      -webkit-transition: background-color .7s, border .7s;
+      -moz-transition: background-color .7s, border .7s;
+      -o-transition: background-color .7s, border .7s;
+      -ms-transition: background-color .7s, border .7s;
+      transition: background-color .7s, border .7s;
+      cursor: pointer;
+      display: inline-block;
+      outline:none;
+
+      -webkit-user-select:none;
+      -moz-user-select:none;
+      -ms-user-select:none;
+      user-select:none;
+}
+
+.button:hover{
+      background-color: $light-black-color;
+      border: 1px solid $dark-grey-color;
+}
+
+.green{
+      background: $dark-green-color;
+}
+
+.green:hover{
+      background: $light-green-color;
+}
+
+.red{
+      background: $dark-red-color;
+}
+
+.red:hover{
+      background: $light-red-color;
+}
+
+.orange{
+      background: $dark-orange-color;
+}
+
+.orange:hover{
+      background: $light-orange-color;
+}

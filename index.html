@@ -2,13 +2,9 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Index</title>	
-	<link href="grid.css" rel="Stylesheet"> 
-	<link href="form.css" rel="Stylesheet"> 
-	<link href="css.css" rel="Stylesheet">
-	<link href="navbar.css" rel="Stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Exo:400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+	<title>Index</title>
+	<link href="css/shadow.min.css" rel="Stylesheet">
+	
 </head>
 <body>
 
@@ -17,7 +13,7 @@
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" id="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 				<span>&#9776;</span>
-                	</button>                	
+                	</button>
 			<a class="navbar-brand" href="#">Link</a>
 		</div>
 		<div class="navbar-body" id="navbar-body">
@@ -37,7 +33,7 @@
 			<ul class="navbar-right"> <!-- nav navbar-nav navbar-right -->
     			  	<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
     				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    			</ul>		
+    			</ul>
 		</div>
 	</div>
 </nav>
@@ -66,13 +62,13 @@
 <!-- form -->
 	<form oninput="output.value=parseInt(inputRange.value)">
 		<fieldset>
-		<legend>Formulario</legend>		
+		<legend>Formulario</legend>
 		<div class="grid-row">
-			<label for="inputText" class="label grid-col-2">Input Text</label> 
-			<div class="grid-col-10"> 
+			<label for="inputText" class="label grid-col-2">Input Text</label>
+			<div class="grid-col-10">
 				<input type="text" name="inputText" id="inputText" class="">
 			</div>
-		</div>	
+		</div>
 		<div class="grid-row">
 			<label for="inputSelect" class="label grid-col-1 grid-offset-1">Select: </label>
 			<div class="grid-col-4">
@@ -86,21 +82,21 @@
 			</div>
 		</div>
 		<div class="grid-row">
-			<label for="inputPass" class="label grid-col-2">Input Password</label> 
+			<label for="inputPass" class="label grid-col-2">Input Password</label>
 			<div class="grid-col-4">
 				<input type="password" name="inputPass" id="inputPass">
 			</div>
-			
-			<label for="inputTextData" class="label grid-col-3">Input Text with data list</label> 
+
+			<label for="inputTextData" class="label grid-col-3">Input Text with data list</label>
 			<div class="grid-col-3">
-				<input type="text" name="inputTextData" id="inputTextData" list="data"> 
+				<input type="text" name="inputTextData" id="inputTextData" list="data">
 				<datalist id="data">
 	        		<option value="Internet Explorer">
 	        		<option value="Firefox">
 	        		<option value="Chrome">
 	        		<option value="Opera">
 	        		<option value="Safari">
-	        		</datalist> 
+	        		</datalist>
 			</div>
 		</div>
 		<div class="grid-row">
@@ -110,7 +106,7 @@
 			</div>
 			<label for="inputColor" class="label grid-offset-1 grid-col-2">Input Color</label>
 			<div class="grid-col-3">
-				<input type="color" name="inputColor" id="inputColor"> 
+				<input type="color" name="inputColor" id="inputColor">
 			</div>
 		</div>
 		<div class="grid-row">
@@ -118,7 +114,7 @@
 			<div class="grid-col-4">
 				<input type="date" name="inputDate" id="inputDate">
 			</div>
-			<label for="inputEmail" class="label grid-col-2">Input Email</label> 
+			<label for="inputEmail" class="label grid-col-2">Input Email</label>
 			<div class="grid-col-4">
 				<input type="email" name="inputEmail" id="inputEmail">
 			</div>
@@ -133,20 +129,20 @@
 		<div class="grid-row">
 			<div class="grid-col-2">
 				<input type="radio" name="inputRadio" value="male" id="radioMale" checked> <label for="radioMale">Male</label> <br>
-	 			<input type="radio" name="inputRadio" value="female" id="radioFemale"> <label for="radioFemale">Female</label> 
+	 			<input type="radio" name="inputRadio" value="female" id="radioFemale"> <label for="radioFemale">Female</label>
 			</div>
 			<div class="grid-col-2">
 				<input type="checkbox" name="inputCheck" value="cat" id="checkCat"> <label for="checkCat">Cat</label> <br>
 	 			<input type="checkbox" name="inputCheck" value="dog" id="checkDog"> <label for="checkDog">Dog</label>
 			</div>
-		</div>		
+		</div>
 		<hr class="dotted">
-		 	 	
+
 	 	<input class="button green" type="submit" name="submitBtn">
 	 	<input class="button" type="reset" name="resetBtn">
 	 	<input class="button" type="button" onclick="alert('Hello World!')" value="Click Me!">
 		</fieldset>
-	</form> 
+	</form>
 </div>
 <script type="text/javascript" src="navbar.js"></script>
 </body>
