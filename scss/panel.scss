@@ -1,25 +1,25 @@
 .panel{
       margin: 25px auto;
       border-radius: 6px;
-      box-shadow: 2px 2px 4px #ddd;
+      box-shadow: 2px 2px 4px $light-grey-color;
       word-wrap: break-word;
 }
 
 .panel-header,
 .panel-body{
       padding: 8px;
-      border: 2px solid #ccc;
+      border: 2px solid $dark-grey-color;
 }
 
 .panel-header{
       padding: 8px 15px;
-      background: #ccc;
+      background: $dark-grey-color;
       border-radius: 6px  6px 0 0;
 }
 
 .panel-header + .panel-body{
       padding: 20px 15px;
-      background: #fefefe;
+      background: $yellow-white-color;
       border-width: 0 2px 2px 2px;
       border-radius: 0 0 6px 6px;
 }

@@ -25,59 +25,49 @@ select{
 	outline:none;
 	font-size: 80%;
 	color: #000;
-}
-
-input[type="text"],
-input[type="password"],
-input[type="number"],
-input[type="date"],
-input[type="email"],
-input[type="color"],
-textarea,
-select{
-   height: 25px;
-   padding: 2px 5px;
-   margin: -3px 0;
-   border: 1px solid #999;
-   border-radius: 2px;
-   box-shadow: 2px 2px 3px #ccc;
-   -webkit-transition: border-color .7s;
-   transition: border-color .7s;
+	height: 25px;
+	padding: 2px 5px;
+	margin: -3px 0;
+	border: 1px solid #999;
+	border-radius: 2px;
+	box-shadow: 2px 2px 3px #ccc;
+	-webkit-transition: border-color .7s;
+	transition: border-color .7s;
 }
 
 select {
-  padding-right: 2.5em;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+	padding-right: 2.5em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
 
-    background-image:
-    linear-gradient(45deg, transparent 50%, #555 50%),
-    linear-gradient(135deg, #555 50%, transparent 50%),
-    linear-gradient(to right, #ddd, #ddd);
-  background-position:
-    calc(100% - 12px) calc(100% - 8px),
-    calc(100% - 07px) calc(100% - 8px),
-    100% 0;
-  background-size:
-    5px 5px,
-    5px 5px,
-    25px 25px;
-  background-repeat: no-repeat;
+	background-image:
+		linear-gradient(45deg, transparent 50%, #555 50%),
+		linear-gradient(135deg, #555 50%, transparent 50%),
+		linear-gradient(to right, #ddd, #ddd);
+	background-position:
+		calc(100% - 12px) calc(100% - 8px),
+		calc(100% - 07px) calc(100% - 8px),
+		100% 0;
+	background-size:
+		5px 5px,
+		5px 5px,
+		25px 25px;
+	background-repeat: no-repeat;
 }
 
 /* arrows */
 select:focus {
-  background-image:
-    linear-gradient(135deg, #fff 50%, transparent 50%),
-    linear-gradient(45deg, transparent 50%, #fff 50%),
-    linear-gradient(to right, #777, #777);
-  background-position:
-    calc(100% - 07px) calc(100% - 8px),
-    calc(100% - 12px) calc(100% - 8px),
-    100% 0;
+	background-image:
+		linear-gradient(135deg, #fff 50%, transparent 50%),
+		linear-gradient(45deg, transparent 50%, #fff 50%),
+		linear-gradient(to right, #777, #777);
+	background-position:
+		calc(100% - 07px) calc(100% - 8px),
+		calc(100% - 12px) calc(100% - 8px),
+		100% 0;
 }
 
 textarea{
@@ -107,9 +97,8 @@ input[type="radio"]:before {
 	border-radius: 10px;
 	visibility: visible;
 	box-shadow: 0 0 0px 2px #999;
-
 	-webkit-transition: background-color .3s;
-   	transition: background-color .3s;
+	transition: background-color .3s;
 }
 
 input[type="radio"]:checked:before {
@@ -132,9 +121,8 @@ input[type="checkbox"]:before {
 	border: 3px solid #fff;
 	visibility: visible;
 	box-shadow: 0 0 0px 2px #999;
-
 	-webkit-transition: background-color .3s;
-   	transition: background-color .3s;
+	transition: background-color .3s;
 }
 
 input[type="checkbox"]:checked:before {
@@ -149,7 +137,7 @@ input[type="email"]:focus,
 input[type="color"]:focus,
 textarea:focus,
 select:focus{
-   border-color: #444;
+	border-color: #444;
 }
 
 [class*="col-"] > input[type="text"],
@@ -165,14 +153,12 @@ select:focus{
 
 @media only screen and (min-width: 600px){
 	.label{
-	   text-align: left;
+		text-align: left;
 	}
 }
 
 @media only screen and (min-width: 768px) {
 	.label{
-	   text-align: right;
+		text-align: right;
 	}
 }
-
-/*temp input::-webkit-calendar-picker-indicator*/

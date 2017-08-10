@@ -79,7 +79,7 @@ nav div,
 .navbar-toggle {
       padding: 5px;
       background-color: #333;
-      color: #fff;
+      color: $full-white-color;
       border: none;
       text-align: center;
       cursor:pointer;
@@ -93,7 +93,7 @@ nav div,
 .bar1, .bar2, .bar3 {
       width: 30px;
       height: 5px;
-      background-color: #fff;
+      background-color: $full-white-color;
       margin: 6px auto;
       transition: 0.4s;
 }

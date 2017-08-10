@@ -14,7 +14,7 @@ hr{
       height: 1px;
       border: 0;
       background: $dark-black-color;
-      background-image: linear-gradient(to right,$light-black-color,$dark-black-color,$light-black-color);
+      background-image: linear-gradient(to right,$light-grey-color,$dark-black-color,$light-grey-color);
 }
 
 hr.dotted{
@@ -31,7 +31,7 @@ a.button{
       margin: 5px;
       padding: 5px 10px;
       background-color: $dark-grey-color;
-      border: 1px solid $light-black-color;
+      border: 1px solid $light-grey-color;
       font: 19px sans-serif;
       letter-spacing: 1px;
       color:$dark-black-color;
@@ -51,7 +51,7 @@ a.button{
 }
 
 .button:hover{
-      background-color: $light-black-color;
+      background-color: $light-grey-color;
       border: 1px solid $dark-grey-color;
 }
 
