@@ -27,7 +27,7 @@ select{
 	color: #000;
 	height: 25px;
 	padding: 2px 5px;
-	margin: -3px 0;
+	margin: -3px 0 3px;
 	border: 1px solid #999;
 	border-radius: 2px;
 	box-shadow: 2px 2px 3px #ccc;
@@ -149,6 +149,10 @@ select:focus{
 [class*="col-"] > textarea,
 [class*="col-"] > select{
 	width: 100%;
+}
+
+span.error-message{
+	color: #ff0000;
 }
 
 @media only screen and (min-width: 600px){

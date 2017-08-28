@@ -1,0 +1,30 @@
+table{
+      border-collapse: collapse;
+      width: 100%;
+}
+
+table, th, td{
+      border: 1px solid #555;
+}
+
+th, td{
+      padding: 5px 10px;
+      font-family: 'Exo', sans-serif;
+}
+
+thead tr{
+      background-color: #ff9900;
+      text-align: center;
+}
+tbody tr{
+      background-color: #ededed;
+      text-align: left;
+}
+
+table.hoverLine tbody tr:hover {
+      background-color: #fff;
+}
+
+table.tableStriped tbody tr:nth-child(even) {
+      background-color: #bfbfbf;
+}
