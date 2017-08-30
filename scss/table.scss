@@ -21,10 +21,11 @@ tbody tr{
       text-align: left;
 }
 
-table.hoverLine tbody tr:hover {
-      background-color: #fff;
-}
 
 table.tableStriped tbody tr:nth-child(even) {
       background-color: #bfbfbf;
+}
+
+table.hoverLine tbody tr:hover {
+      background-color: #fff;
 }
