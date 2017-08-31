@@ -13,14 +13,14 @@
 .panel-header{
       padding: 8px 15px;
       background: $dark-grey-color;
-      border-radius: 2px 0;
+      border-radius: 2px 2px 0 0;
 }
 
 .panel-header + .panel-body{
       padding: 20px 15px;
       background: $yellow-white-color;
       border-width: 0 2px 2px 2px;
-      border-radius: 0 2px;
+      border-radius: 0 0 2px 2px;
 }
 
 /* success */
