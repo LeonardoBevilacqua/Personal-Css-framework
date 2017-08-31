@@ -1,6 +1,5 @@
 .panel{
       margin: 25px auto;
-      border-radius: 6px;
       box-shadow: 2px 2px 4px $light-grey-color;
       word-wrap: break-word;
 }
@@ -14,14 +13,14 @@
 .panel-header{
       padding: 8px 15px;
       background: $dark-grey-color;
-      border-radius: 6px  6px 0 0;
+      border-radius: 2px 0;
 }
 
 .panel-header + .panel-body{
       padding: 20px 15px;
       background: $yellow-white-color;
       border-width: 0 2px 2px 2px;
-      border-radius: 0 0 6px 6px;
+      border-radius: 0 2px;
 }
 
 /* success */
