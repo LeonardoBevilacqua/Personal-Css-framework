@@ -1,0 +1,180 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="../css/shadow.min.css" rel="Stylesheet"> 
+
+<style>
+	.modal{
+		display: none; /* Hidden by default */
+    		position: fixed; /* Stay in place */
+    		z-index: 1; /* Sit on top */
+    		left: 0;
+    		top: 0;
+    		width: 100%; /* Full width */
+    		height: 100%; /* Full height */
+    		overflow: auto; /* Enable scroll if needed */
+    		background-color: rgb(0,0,0); /* Fallback color */
+    		background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    		
+	}
+		
+	.modal-content {
+	    	background-color: #fefefe;
+	    	margin: 15% auto; /* 15% from the top and centered */
+	    	border: 1px solid #888;
+	    	width: 80%; /* Could be more or less, depending on screen size */
+	    	box-shadow: 1px 2px 9px #444;
+	    	
+	    	-webkit-animation-name: showmodal;
+		-webkit-animation-duration: 0.7s;
+    		animation-name: showmodal;
+    		animation-duration: 0.7s
+	}
+	
+	/* Add Animation */
+	@-webkit-keyframes showmodal {
+	    	from {opacity: 0} 
+	    	to {opacity: 1}
+	}
+	
+	@keyframes showmodal {
+	    	from {opacity: 0}
+	    	to {opacity: 1}
+	}
+	
+	.modal-header, .modal-footer{
+		background-color: #ff9900;
+		color: #fff;
+		padding: 15px 20px;
+	}
+	
+	.modal-header{
+		border-bottom: 2px solid #ff8800;
+	}
+	
+	.modal-footer{
+		border-top: 2px solid #ff8800;
+	}
+	
+	.modal-body{
+		padding: 25px 20px;
+	}	
+	
+	/* The Close Button */
+	.close {
+	    color: #aaa;
+	    float: right;
+	    font-size: 42px;
+	    font-weight: bold;
+	    line-height: 50%;
+	}
+	
+	.modal-header > .close{
+		color: #fff;
+	}
+		
+	.close:hover,
+	.close:focus {
+	    color: black;
+	    text-decoration: none;
+	    cursor: pointer;
+	}
+	
+	
+</style>
+</head> 
+<body>  
+<nav class="navbar">
+	<div class="grid-container fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" id="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<!--span>&#9776;</span-->
+				<div class="bar1"></div>
+  				<div class="bar2"></div>
+  				<div class="bar3"></div>
+                	</button>
+			<a class="navbar-brand" href="#">Link</a>
+		</div>
+		<div class="navbar-body" id="navbar-body">
+			<ul class="navbar-left">
+				<li><a href="navbar.html" >navbar.html</a></li>
+      				<li><a href="index.html" >index.html</a></li>
+      				<li><a href="panel.html" >panel.html</a></li>
+      				<li class="dropdown" id="dropdown">
+      					<a href="#" class="active">Dropdown</a>
+      					<ul class="nav-dropdown-content" id="nav-dropdown-content">
+      						<li><a href="info.html">info.html</a></li>
+      						<li><a href="table.html">table.html</a></li>
+      						<li><a href="#" class="active">modal.html</a></li>
+      					</ul>
+      				</li>
+			</ul>
+			<ul class="navbar-right"> <!-- nav navbar-nav navbar-right -->
+    			  	<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+    				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    			</ul>
+		</div>
+	</div>
+</nav>
+
+<!-- INICIO -->
+	<!-- Trigger/Open The Modal -->
+	<button id="myBtn" class="button">Open Modal</button>
+	
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+	
+		<!-- Modal content -->
+		<div class="modal-content">
+			<div class="modal-header">
+				<span class="close">&times;</span>
+				<h2> Modal Header </h2>
+			</div>
+		  	<div class="modal-body">
+		  		<p>Some text in the Modal..</p>
+		  	</div>
+		  	<div class="modal-footer">
+		  		<h3>Modal Footer </h3>
+		  	</div>		  
+		</div>
+		
+		<!-- div class="modal-content">
+			<div class="modal-body">
+				<span class="close">&times;</span>
+		  		<p>Some text in the Modal..</p>
+		  	</div> 
+		</div -->
+	
+	</div>
+<!--  FIM   -->
+
+<script type="text/javascript" src="navbar.js"></script>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
