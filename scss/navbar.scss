@@ -11,7 +11,7 @@ nav div,
 .navbar-right,
 .nav-dropdown-content{
       list-style-type: none;
-      background-color: #333;
+      background-color: $nav-base;
 }
 
 
@@ -29,7 +29,7 @@ nav div,
 .navbar-right li a,
 .navbar-header .navbar-brand{
       display: block;
-      color: white;
+      color: $font-nav;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
@@ -41,7 +41,7 @@ nav div,
 
 .navbar-left li a:hover:not(.active),
 .navbar-right li a:hover {
-      background-color: #111;
+      background-color: $hover-link;
 }
 
 .navbar-header > .navbar-brand:hover{

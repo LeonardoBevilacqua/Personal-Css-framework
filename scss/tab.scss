@@ -1,0 +1,42 @@
+div.tab{
+      min-width: 50%;
+      margin: 5px auto;
+      box-shadow: 2px 2px 6px #bbbbbb;
+}
+
+div.tab-links{
+      overflow: hidden;
+      border: 1px solid #555555;
+      background-color: #333333;
+}
+
+div.tab-links button{
+      background-color: inherit;
+      color: #fff;
+      font-size: 16px;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: .3s;
+}
+
+div.tab-links button:hover{
+      background-color: #994400;
+}
+
+div.tab-links button.active{
+      background-color: #ff9900;
+}
+
+div.tab-content{
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #555555;
+      border-top: none;
+}
+
+div.tab-content.activeTab{
+      display: block;
+}

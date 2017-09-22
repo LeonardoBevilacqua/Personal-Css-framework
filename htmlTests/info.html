@@ -2,7 +2,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="../css/shadow.min.css" rel="Stylesheet">
-
+<script src="../js/jquery.min.js"></script>
 </head>
 <body>
 	<nav class="navbar">
@@ -18,15 +18,16 @@
 			</div>
 			<div class="navbar-body" id="navbar-body">
 				<ul class="navbar-left">
-					<li><a href="navbar.html" >navbar.html</a></li>
+					<li><a href="navbar.html">navbar.html</a></li>
 					<li><a href="index.html" >index.html</a></li>
 					<li><a href="panel.html" >panel.html</a></li>
 					<li class="dropdown" id="dropdown">
-						<a href="#" class="active">Dropdown</a>
+						<a href="#">Dropdown</a>
 						<ul class="nav-dropdown-content" id="nav-dropdown-content">
 							<li><a href="info.html">info.html</a></li>
 							<li><a href="table.html">table.html</a></li>
-							<li><a href="#" class="active">modal.html</a></li>
+							<li><a href="modal.html">modal.html</a></li>
+							<li><a href="tab.html">tab.html</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -37,6 +38,7 @@
 			</div>
 		</div>
 	</nav>
+
 
 <div class="info">
  	<span class="close">x</span>
@@ -89,7 +91,7 @@
 	</div>
 </div>
 
-<script type="text/javascript" src="navbar.js"></script>
+<script src="../js/shadow.js"></script>
 <script>
 	document.body.onclick= function(e){
 		e=window.event? event.srcElement: e.target;
