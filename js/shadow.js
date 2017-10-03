@@ -1,24 +1,24 @@
-/* navbar */
-document.getElementById("navbar-toggle").onclick = function(){
-      var body = document.getElementById("navbar-body");
-      this.classList.toggle("change");
-      if(body.className === "navbar-body"){
-            body.className += " responsive";
+/* ==================================== navbar ==================================== */
+$("#navbar-toggle").on('click', function() {
+      var body = $("#navbar-body");
+      $(this).toggleClass("change");
+      if(body.attr('class') === "navbar-body"){
+            body.addClass("responsive");
       }
       else{
-            body.className = "navbar-body";
+            body.removeClass("responsive");
       }
-}
+});
 
-document.getElementById("dropdown").onclick = function(){
-      var body = document.getElementById("nav-dropdown-content");
-      if(body.className === "nav-dropdown-content"){
-            body.className += " responsive";
+$("#dropdown").on('click', function(){
+      var body = $("#nav-dropdown-content");
+      if(body.attr('class') === "nav-dropdown-content"){
+            body.addClass("responsive");
       }
       else{
-            body.className = "nav-dropdown-content";
+            body.removeClass("responsive");
       }
-}
+});
 
 // PEGA O PAGINA ATUAL
 var page = document.location.pathname;
@@ -35,9 +35,9 @@ $(".navbar-body").find('a').each(function(e){
             return;
       }
 });
-/* end navbar */
+/* ==================================== end navbar ==================================== */
 
-/* tab */
+/* ==================================== tab ==================================== */
 $(document).on('click', '.tab-links > .link', function() {
       var btns = $(this).parent().children();
       var tabs = $(this).parent().parent().find('div[class^="tab-content"]');
@@ -56,4 +56,40 @@ $(document).on('click', '.tab-links > .link', function() {
             }
       });
 });
-/* end tab */
+/* ==================================== end tab ==================================== */
+
+/* ==================================== modal ==================================== */
+if ($(".modal").length) {
+      var modals = $('.modal');
+      var modal = null;
+      var btn = null;
+      var spanClose = null;
+
+      // When the user clicks on the button, open the modal
+      $(document).on('click', 'button[id^="modal-"]', function() {
+            // Get the button that opens the modal
+            btn = $(this);
+            // get the current modal
+            $(modals).each(function(e) {
+                  if ($(this).attr('data-modal') == btn.attr('id')) {
+                        modal = $(this);
+                        // Get the <span> element that closes the modal
+                        spanClose = modal.find(".close");
+                  }
+            });
+
+            modal.css({display : "block"});
+
+            // When the user clicks on <span> (x), close the modal
+            spanClose.on('click', function() {
+                  modal.css({display : "none"});
+            });
+            // When the user clicks anywhere outside of the modal, close it
+            $(window).on('click', function(event) {
+                  if ($(event.target).attr('data-modal') == modal.attr('data-modal')) {
+                        modal.css({display : "none"});
+                  }
+            });
+      });
+}
+/* ==================================== end modal ==================================== */

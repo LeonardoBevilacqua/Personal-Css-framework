@@ -50,6 +50,23 @@ a.button{
       user-select:none;
 }
 
+.link{
+      border: none;
+      outline: none;
+      background: none;
+      font-size: 16px;
+      color: rgb(0, 0, 238);
+}
+
+.link:hover{
+      color: #5555ff;
+      cursor: pointer;
+}
+
+.link:active{
+      color: #ff1111;
+}
+
 .button:hover{
       background-color: $light-grey-color;
       border: 1px solid $dark-grey-color;
