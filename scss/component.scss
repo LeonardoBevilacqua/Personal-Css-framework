@@ -30,16 +30,16 @@ a.button{
 .button {
       margin: 5px;
       padding: 5px 10px;
-      background-color: $dark-grey-color;
-      border: 1px solid $light-grey-color;
+      background-color: $light-grey-color;
+      border: 1px solid $dark-grey-color;
       font: 19px sans-serif;
       letter-spacing: 1px;
       color:$dark-black-color;
-      -webkit-transition: background-color .7s, border .7s;
-      -moz-transition: background-color .7s, border .7s;
-      -o-transition: background-color .7s, border .7s;
-      -ms-transition: background-color .7s, border .7s;
-      transition: background-color .7s, border .7s;
+      -webkit-transition: background-color .7s, border .7s, box-shadow .7s;
+      -moz-transition: background-color .7s, border .7s, box-shadow .7s;
+      -o-transition: background-color .7s, border .7s, box-shadow .7s;
+      -ms-transition: background-color .7s, border .7s, box-shadow .7s;
+      transition: background-color .7s, border .7s, box-shadow .7s;
       cursor: pointer;
       display: inline-block;
       outline:none;
@@ -68,30 +68,51 @@ a.button{
 }
 
 .button:hover{
-      background-color: $light-grey-color;
-      border: 1px solid $dark-grey-color;
+      background-color: $dark-grey-color;
+      border-color: $light-grey-color;
+      box-shadow: 2px 1px 7px #888;
 }
 
 .green{
-      background: $dark-green-color;
+      background: $light-green-color;
+      border-color: $dark-green-color;
 }
 
 .green:hover{
-      background: $light-green-color;
+      background: $dark-green-color;
+      border-color: $light-green-color;
 }
 
 .red{
-      background: $dark-red-color;
+      background: $light-red-color;
+      border-color: $dark-red-color;
 }
 
 .red:hover{
-      background: $light-red-color;
+      background: $dark-red-color;
+      border-color: $light-red-color;
 }
 
 .orange{
-      background: $dark-orange-color;
+      background: $light-orange-color;
+      border-color: $dark-orange-color;
 }
 
 .orange:hover{
-      background: $light-orange-color;
+      background: $dark-orange-color;
+      border-color: $light-orange-color;
+}
+
+.blue{
+      background: $light-blue-color;
+      border-color: $dark-blue-color;
+}
+
+.blue:hover{
+      background: $dark-blue-color;
+      border-color: $light-blue-color;
+}
+
+.green,.red,.orange,.blue{
+      color: #fff;
 }
