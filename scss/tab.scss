@@ -10,6 +10,11 @@ div.tab-links{
       background-color: #333333;
 }
 
+div.tab-links > .link:hover,
+div.tab-links > .link:active{
+      color: #fff;
+}
+
 div.tab-links button{
       background-color: inherit;
       color: #fff;
