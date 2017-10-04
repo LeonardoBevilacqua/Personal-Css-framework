@@ -1,17 +1,17 @@
 fieldset{
 	margin: 5px auto;
-	border: #ddd 2px groove;
-	border-radius: 2px;
+	border: #555 1px solid;
 	padding:5px;
 	box-shadow: 2px 2px 3px #ccc;
 }
 
 legend{
-	padding:0 3px;
-	border: #ddd 2px groove;
-	border-radius: 5px;
+	padding:2px 4px;
+	border: #555 1px solid;
+	border-radius: 2px;
 	font: 90% 'Exo', sans-serif;
 	color: #444;
+	font-weight: bold;
 }
 
 input[type="text"],
@@ -84,7 +84,7 @@ input[type="radio"] {
 	cursor: pointer;
 }
 
-input[type="radio"]:before {
+input[type="radio"] + label::before {
 	content: " ";
 	#background-color: #ccc;
 	display: inline-block;
@@ -101,7 +101,7 @@ input[type="radio"]:before {
 	transition: background-color .3s;
 }
 
-input[type="radio"]:checked:before {
+input[type="radio"]:checked + label::before {
 	background-color: #555;
 }
 
@@ -111,7 +111,7 @@ input[type="checkbox"] {
 	cursor: pointer;
 }
 
-input[type="checkbox"]:before {
+input[type="checkbox"] + label::before {
 	content: " ";
 	#background-color: #ccc;
 	display: inline-block;
@@ -125,7 +125,7 @@ input[type="checkbox"]:before {
 	transition: background-color .3s;
 }
 
-input[type="checkbox"]:checked:before {
+input[type="checkbox"]:checked + label::before {
 	background-color: #555;
 }
 
