@@ -32,8 +32,8 @@ a.button{
       padding: 5px 10px;
       background-color: $light-grey-color;
       border: 1px solid $dark-grey-color;
-      font: 19px sans-serif;
-      letter-spacing: 1px;
+      font: 18px sans-serif;
+      font-weight: 500;
       color:$dark-black-color;
       -webkit-transition: background-color .3s, border .3s, box-shadow .3s;
       -moz-transition: background-color .3s, border .3s, box-shadow .3s;
@@ -43,6 +43,7 @@ a.button{
       cursor: pointer;
       display: inline-block;
       outline:none;
+      text-transform: uppercase;
 
       -webkit-user-select:none;
       -moz-user-select:none;
