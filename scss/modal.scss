@@ -9,7 +9,6 @@
       overflow: auto; /* Enable scroll if needed */
       background-color: rgb(0,0,0); /* Fallback color */
       background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-
 }
 
 .modal-content {
@@ -37,34 +36,63 @@
 }
 
 .modal-header, .modal-footer{
-      background-color: #ff9900;
-      color: #fff;
+      background-color: $light-grey-color;
+      color: #333;
       padding: 15px 20px;
 }
 
 .modal-header{
-      border-bottom: 2px solid #ff8800;
+      border-bottom: 2px solid $dark-grey-color;
 }
 
 .modal-footer{
-      border-top: 2px solid #ff8800;
+      border-top: 2px solid $dark-grey-color;
 }
 
 .modal-body{
       padding: 25px 20px;
 }
 
-/* The Close Button */
-.close {
-      color: #aaa;
+.modal.modal-green .modal-header,
+.modal.modal-green .modal-footer{
+      background-color: $light-green-color;
+      border-color: $dark-green-color;
+}
+
+.modal.modal-orange .modal-header,
+.modal.modal-orange .modal-footer{
+      background-color: $light-orange-color;
+      border-color: $dark-orange-color;
+}
+
+.modal.modal-red .modal-header,
+.modal.modal-red .modal-footer{
+      background-color: $light-red-color;
+      border-color: $dark-red-color;
+}
+
+.modal.modal-blue .modal-header,
+.modal.modal-blue .modal-footer{
+      background-color: $light-blue-color;
+      border-color: $dark-blue-color;
+}
+
+.modal.modal-green .modal-header,
+.modal.modal-green .modal-footer,
+.modal.modal-orange .modal-header,
+.modal.modal-orange .modal-footer,
+.modal.modal-red .modal-header,
+.modal.modal-red .modal-footer,
+.modal.modal-blue .modal-header,
+.modal.modal-blue .modal-footer{
+      color: #eee;
+}
+
+.modal-header > .close{
       float: right;
       font-size: 42px;
       font-weight: bold;
       line-height: 50%;
-}
-
-.modal-header > .close{
-      color: #fff;
 }
 
 .close:hover,
