@@ -1,3 +1,6 @@
+/* ==================================== Globals ==================================== */
+var hasModal = $(".modal").length ? true : false;
+/* ==================================== End Globals ==================================== */
 /* ==================================== navbar ==================================== */
 $("#navbar-toggle").on('click', function() {
       var body = $("#navbar-body");
@@ -59,37 +62,31 @@ $(document).on('click', '.tab-links > .link', function() {
 /* ==================================== end tab ==================================== */
 
 /* ==================================== modal ==================================== */
-if ($(".modal").length) {
-      var modals = $('.modal');
-      var modal = null;
-      var btn = null;
+function openModal(modal) {
       var spanClose = null;
+      // get the current modal
+      var modal = $('div.modal[data-IdModal="' + modal + '"]');
 
-      // When the user clicks on the button, open the modal
-      $(document).on('click', 'button[id^="modal-"]', function() {
-            // Get the button that opens the modal
-            btn = $(this);
-            // get the current modal
-            $(modals).each(function(e) {
-                  if ($(this).attr('data-modal') == btn.attr('id')) {
-                        modal = $(this);
-                        // Get the <span> element that closes the modal
-                        spanClose = modal.find(".close");
-                  }
-            });
-
+      if(modal){
+            spanClose = modal.find('[data-ActionModal="close"]');
             modal.css({display : "block"});
 
             // When the user clicks on <span> (x), close the modal
             spanClose.on('click', function() {
                   modal.css({display : "none"});
             });
-            // When the user clicks anywhere outside of the modal, close it
-            $(window).on('click', function(event) {
-                  if ($(event.target).attr('data-modal') == modal.attr('data-modal')) {
-                        modal.css({display : "none"});
-                  }
-            });
+      }
+}
+
+if (hasModal) {
+      var btn = null;
+
+      // When the user clicks on the button, open the modal
+      $(document).on('click', 'button[data-IdModal]', function() {
+            // Get the button that opens the modal
+            btn = $(this);
+            // Open the modal if exists
+            openModal(btn.attr('data-IdModal'));
       });
 }
 /* ==================================== end modal ==================================== */
