@@ -9,5 +9,5 @@
     "structure": {
         "readme": "/doc/README.md"
     },
-    "output": "doc"
+    "root": "doc/"
 }
