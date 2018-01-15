@@ -1,0 +1,100 @@
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../css/shadow.min.css" rel="Stylesheet">
+	<script src="../js/jquery.min.js"></script>
+</head>
+
+</html>
+
+<body>
+
+	<nav class="navbar">
+		<div class="grid-container fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" id="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<!--span>&#9776;</span-->
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</button>
+				<a class="navbar-brand" href="#">Link</a>
+			</div>
+			<div class="navbar-body" id="navbar-body">
+				<ul class="navbar-left">
+					<li>
+						<a href="navbar.html">navbar.html</a>
+					</li>
+					<li>
+						<a href="index.html">index.html</a>
+					</li>
+					<li>
+						<a href="panel.html">panel.html</a>
+					</li>
+					<li class="dropdown" id="dropdown">
+						<a href="#">Dropdown</a>
+						<ul class="nav-dropdown-content" id="nav-dropdown-content">
+							<li>
+								<a href="info.html">info.html</a>
+							</li>
+							<li>
+								<a href="table.html">table.html</a>
+							</li>
+							<li>
+								<a href="modal.html">modal.html</a>
+							</li>
+							<li>
+								<a href="tab.html">tab.html</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="navbar-right">
+					<!-- nav navbar-nav navbar-right -->
+					<li>
+						<a href="#">
+							<span class="glyphicon glyphicon-user"></span> Sign Up</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="glyphicon glyphicon-log-in"></span> Login</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="grid-container">
+		<h1>Tabs (Abas)</h1>
+		<div class="tab-container">
+			<div class="tab-links-container">
+				<button class="tab-link tab-active" id="Tab1">Tab 1</button>
+				<button class="tab-link" id="Tab2">Tab 2</button>
+				<button class="tab-link" id="Tab3">Tab 3</button>
+				<a href="#" class="tab-link" id="Tab4">Link</a>
+			</div>
+
+			<div class="tab-content current-tab" data-idTab="Tab1">
+				<h1>Aba 1 com titulo h1</h3>
+					<p>Paragrafo dentro da aba</p>
+			</div>
+
+			<div class="tab-content" data-idTab="Tab2">
+				<h3>Tab 2</h3>
+				<p>Content of Tab 2</p>
+			</div>
+
+			<div class="tab-content" data-idTab="Tab3">
+				<h3>Tab 3</h3>
+				<p>Content of Tab 3</p>
+			</div>
+
+			<div class="tab-content" data-idTab="Tab4">
+				<h3>Tab 4</h3>
+				<p>Content of Tab 4</p>
+			</div>
+		</div>
+	</div>
+	<script src="../js/shadow.js"></script>
+</body>

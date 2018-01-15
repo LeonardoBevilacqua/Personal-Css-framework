@@ -41,21 +41,20 @@ $(".navbar-body").find('a').each(function(e){
 /* ==================================== end navbar ==================================== */
 
 /* ==================================== tab ==================================== */
-$(document).on('click', '.tab-links > .link', function() {
-      var btns = $(this).parent().children();
-      var tabs = $(this).parent().parent().find('div[class^="tab-content"]');
+$(document).on('click', 'div.tab-links-container > .tab-link', function() {
+      var links = $(this).parent().children();
+      var tabs = $(this).parent().parent().find('div.tab-content');
       var id = $(this).attr('id');
 
-      console.log(tabs);
-      $(btns).each(function (){
-            $(this).removeClass('active');
+      $(links).each(function (){
+            $(this).removeClass('tab-active');
       });
-      $(this).addClass('active');
+      $(this).addClass('tab-active');
 
       $(tabs).each(function (){
-            $(this).removeClass('activeTab');
-            if ($(this).attr('data-link') == id) {
-                  $(this).addClass('activeTab');
+            $(this).removeClass('current-tab');
+            if ($(this).attr('data-idTab') == id) {
+                  $(this).addClass('current-tab');
             }
       });
 });
