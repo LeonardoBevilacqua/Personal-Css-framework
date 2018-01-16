@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/shadow.min.css">
+    <script src="/js/jquery.min.js"></script>
     <title>Shadow</title>
 </head>
 
@@ -20,6 +21,16 @@
             <li><a href="componentes/tab.html">tab Container</a></li>
         </ul>
     </div>
+    <div id="shadow-content">
+    </div>
+    
+    <script>
+        $('a').click(function(event){   
+            event.preventDefault();
+            var url = $(this).attr('href');
+            $('#shadow-content').load(url);
+         });
+    </script>
 </body>
 
 </html>
