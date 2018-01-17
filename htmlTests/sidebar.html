@@ -1,60 +1,133 @@
 <html>
+
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="../css/shadow.min.css" rel="Stylesheet">
 	<script src="../js/jquery.min.js"></script>
 	<script src="../js/shadow.js"></script>
 	<style>
-		p{ margin-bottom: 12px;}
-		
+		p {
+			margin-bottom: 12px;
+		}
+
 		nav.sidebar,
-		div.sidebar-content{
+		div.sidebar-content {
 			top: 0;
 			left: 0;
-
+			margin: 0;
+			opacity: 1;
 		}
-		div.sidebar-content{
+
+		nav.sidebar{
+			transition: width .5s, opacity .5s  .2s;
+			
+		}
+
+		nav.sidebar.closed {
+			width: 0;
+			padding: 0;
+			opacity: 0;
+			/*transition: width .5s .2s, opacity .5s;*/
+			transition: all .5s;
+		}
+
+		div.sidebar-content {
 			background-color: red;
 			position: fixed;
 			height: 100%;
 			width: inherit;
 		}
-		
-		div.main{
-			//margin-left: 200px;
-		}
+
 	</style>
 </head>
+
 </html>
+
 <body>
 
 	<div class="grid-container fluid grid-row">
-		<nav class="sidebar grid-col-2">
+		<nav class="sidebar grid-col-2 ">
 			<div class="sidebar-content ">
 				<h3>SideBar </h3>
 				<ul>
-					<li><a href="#">Link</a></li>
-					<li><a href="#">Link</a></li>
-					<li><a href="#">Link</a></li>
-					<li><a href="#">Link</a></li>
-					<li><a href="#">Link</a></li>
+					<li>
+						<a href="#">Link</a>
+					</li>
+					<li>
+						<a href="#">Link</a>
+					</li>
+					<li>
+						<a href="#">Link</a>
+					</li>
+					<li>
+						<a href="#">Link</a>
+					</li>
+					<li>
+						<a href="#">Link</a>
+					</li>
 				</ul>
 			</div>
 		</nav>
-		
+
 		<div class="main grid-container grid-col-10">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla urna sed libero pellentesque ultricies ac sit amet erat. Etiam lacinia ut tellus et condimentum. Praesent et erat nec ex molestie suscipit. Etiam sit amet consectetur mauris, sollicitudin facilisis urna. Sed pretium neque malesuada aliquam cursus. Cras urna massa, dignissim sit amet consectetur et, varius ut dolor. Morbi interdum lacus vel lorem tincidunt, ut fermentum augue venenatis. Fusce tempor nec mi non luctus. Phasellus lacinia leo non dolor consequat placerat tempor et velit. Nullam iaculis semper erat. Nunc a porttitor justo. Phasellus at ligula non risus gravida maximus.</p>
-			<p>Sed eget est at ligula tempor gravida. Mauris vel dignissim libero, non pretium ante. Sed quis feugiat felis, at ultricies sapien. Pellentesque viverra turpis in elementum maximus. Phasellus et purus tincidunt lacus aliquet aliquet. Cras sed neque condimentum, ultrices massa eu, tincidunt massa. Proin sagittis placerat massa, tincidunt tempus velit consequat a. Vestibulum ullamcorper, lorem ut vulputate vehicula, dui purus consequat eros, a sollicitudin justo magna at sem. Curabitur ut neque vel erat finibus elementum euismod vitae diam. Sed consequat eros ut velit sagittis placerat.				                               </p>
-			<p>In eu arcu ut justo consectetur fermentum sit amet vel dui. Donec quis ligula at felis feugiat cursus. Nam posuere lacus non dui viverra eleifend. Donec id dapibus nisl, eu semper purus. Nunc quis justo eu lacus consequat tempus et vel ante. Suspendisse nec arcu dignissim magna rhoncus sodales. Curabitur ac tristique lorem, suscipit iaculis neque. Suspendisse ac gravida urna. Donec auctor aliquam urna sit amet tristique. Quisque blandit mauris vitae metus eleifend pulvinar. Nullam dapibus eleifend erat, id finibus justo viverra sed. Pellentesque viverra in nisi nec bibendum. Maecenas malesuada elementum justo sed convallis.</p>				
-			<p>Sed a commodo tellus. Donec mauris dolor, lobortis vitae interdum eget, pharetra vel nibh. Phasellus laoreet sem tempus ipsum faucibus dictum. Aliquam erat volutpat. Phasellus posuere vitae risus id feugiat. Nunc consequat semper sollicitudin. Maecenas vitae lorem sem. Quisque bibendum suscipit arcu vel volutpat. Sed nec sem et leo dictum blandit.				                                                                                                                                                                                                                                                                               </p>
-			<p>Maecenas aliquet enim ultricies rhoncus facilisis. Nunc sed sollicitudin arcu. Duis at quam vehicula arcu feugiat vulputate eget ac nunc. Phasellus euismod, diam eget volutpat mattis, nisl leo fermentum eros, eu ultrices libero sapien sit amet diam. Suspendisse imperdiet leo non eros iaculis, id congue mi commodo. Suspendisse consequat, massa at ultrices pellentesque, libero lacus eleifend lacus, at ornare magna nunc in ipsum. Nullam ac lacinia quam. Aenean scelerisque, mauris quis aliquam facilisis, est ligula vestibulum ligula, in varius mauris nulla vitae lorem.                                                            </p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla urna sed libero pellentesque ultricies ac sit amet erat. Etiam lacinia ut tellus et condimentum. Praesent et erat nec ex molestie suscipit. Etiam sit amet consectetur mauris, sollicitudin facilisis urna. Sed pretium neque malesuada aliquam cursus. Cras urna massa, dignissim sit amet consectetur et, varius ut dolor. Morbi interdum lacus vel lorem tincidunt, ut fermentum augue venenatis. Fusce tempor nec mi non luctus. Phasellus lacinia leo non dolor consequat placerat tempor et velit. Nullam iaculis semper erat. Nunc a porttitor justo. Phasellus at ligula non risus gravida maximus.</p>
-			<p>Sed eget est at ligula tempor gravida. Mauris vel dignissim libero, non pretium ante. Sed quis feugiat felis, at ultricies sapien. Pellentesque viverra turpis in elementum maximus. Phasellus et purus tincidunt lacus aliquet aliquet. Cras sed neque condimentum, ultrices massa eu, tincidunt massa. Proin sagittis placerat massa, tincidunt tempus velit consequat a. Vestibulum ullamcorper, lorem ut vulputate vehicula, dui purus consequat eros, a sollicitudin justo magna at sem. Curabitur ut neque vel erat finibus elementum euismod vitae diam. Sed consequat eros ut velit sagittis placerat.				                               </p>
-			<p>In eu arcu ut justo consectetur fermentum sit amet vel dui. Donec quis ligula at felis feugiat cursus. Nam posuere lacus non dui viverra eleifend. Donec id dapibus nisl, eu semper purus. Nunc quis justo eu lacus consequat tempus et vel ante. Suspendisse nec arcu dignissim magna rhoncus sodales. Curabitur ac tristique lorem, suscipit iaculis neque. Suspendisse ac gravida urna. Donec auctor aliquam urna sit amet tristique. Quisque blandit mauris vitae metus eleifend pulvinar. Nullam dapibus eleifend erat, id finibus justo viverra sed. Pellentesque viverra in nisi nec bibendum. Maecenas malesuada elementum justo sed convallis.</p>				
-			<p>Sed a commodo tellus. Donec mauris dolor, lobortis vitae interdum eget, pharetra vel nibh. Phasellus laoreet sem tempus ipsum faucibus dictum. Aliquam erat volutpat. Phasellus posuere vitae risus id feugiat. Nunc consequat semper sollicitudin. Maecenas vitae lorem sem. Quisque bibendum suscipit arcu vel volutpat. Sed nec sem et leo dictum blandit.				                                                                                                                                                                                                                                                                               </p>
-			<p>Maecenas aliquet enim ultricies rhoncus facilisis. Nunc sed sollicitudin arcu. Duis at quam vehicula arcu feugiat vulputate eget ac nunc. Phasellus euismod, diam eget volutpat mattis, nisl leo fermentum eros, eu ultrices libero sapien sit amet diam. Suspendisse imperdiet leo non eros iaculis, id congue mi commodo. Suspendisse consequat, massa at ultrices pellentesque, libero lacus eleifend lacus, at ornare magna nunc in ipsum. Nullam ac lacinia quam. Aenean scelerisque, mauris quis aliquam facilisis, est ligula vestibulum ligula, in varius mauris nulla vitae lorem.                                                            </p>
-			
+			<button id="closeSidebar">click</button>
+			<script>
+				$("#closeSidebar").click(function () {
+					$(".sidebar").toggleClass("closed");
+				});
+			</script>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla urna sed libero pellentesque ultricies ac
+				sit amet erat. Etiam lacinia ut tellus et condimentum. Praesent et erat nec ex molestie suscipit. Etiam sit amet consectetur
+				mauris, sollicitudin facilisis urna. Sed pretium neque malesuada aliquam cursus. Cras urna massa, dignissim sit amet
+				consectetur et, varius ut dolor. Morbi interdum lacus vel lorem tincidunt, ut fermentum augue venenatis. Fusce tempor
+				nec mi non luctus. Phasellus lacinia leo non dolor consequat placerat tempor et velit. Nullam iaculis semper erat. Nunc
+				a porttitor justo. Phasellus at ligula non risus gravida maximus.</p>
+			<p>Sed eget est at ligula tempor gravida. Mauris vel dignissim libero, non pretium ante. Sed quis feugiat felis, at ultricies
+				sapien. Pellentesque viverra turpis in elementum maximus. Phasellus et purus tincidunt lacus aliquet aliquet. Cras sed
+				neque condimentum, ultrices massa eu, tincidunt massa. Proin sagittis placerat massa, tincidunt tempus velit consequat
+				a. Vestibulum ullamcorper, lorem ut vulputate vehicula, dui purus consequat eros, a sollicitudin justo magna at sem.
+				Curabitur ut neque vel erat finibus elementum euismod vitae diam. Sed consequat eros ut velit sagittis placerat. </p>
+			<p>In eu arcu ut justo consectetur fermentum sit amet vel dui. Donec quis ligula at felis feugiat cursus. Nam posuere lacus
+				non dui viverra eleifend. Donec id dapibus nisl, eu semper purus. Nunc quis justo eu lacus consequat tempus et vel ante.
+				Suspendisse nec arcu dignissim magna rhoncus sodales. Curabitur ac tristique lorem, suscipit iaculis neque. Suspendisse
+				ac gravida urna. Donec auctor aliquam urna sit amet tristique. Quisque blandit mauris vitae metus eleifend pulvinar.
+				Nullam dapibus eleifend erat, id finibus justo viverra sed. Pellentesque viverra in nisi nec bibendum. Maecenas malesuada
+				elementum justo sed convallis.</p>
+			<p>Sed a commodo tellus. Donec mauris dolor, lobortis vitae interdum eget, pharetra vel nibh. Phasellus laoreet sem tempus
+				ipsum faucibus dictum. Aliquam erat volutpat. Phasellus posuere vitae risus id feugiat. Nunc consequat semper sollicitudin.
+				Maecenas vitae lorem sem. Quisque bibendum suscipit arcu vel volutpat. Sed nec sem et leo dictum blandit. </p>
+			<p>Maecenas aliquet enim ultricies rhoncus facilisis. Nunc sed sollicitudin arcu. Duis at quam vehicula arcu feugiat vulputate
+				eget ac nunc. Phasellus euismod, diam eget volutpat mattis, nisl leo fermentum eros, eu ultrices libero sapien sit amet
+				diam. Suspendisse imperdiet leo non eros iaculis, id congue mi commodo. Suspendisse consequat, massa at ultrices pellentesque,
+				libero lacus eleifend lacus, at ornare magna nunc in ipsum. Nullam ac lacinia quam. Aenean scelerisque, mauris quis aliquam
+				facilisis, est ligula vestibulum ligula, in varius mauris nulla vitae lorem. </p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla urna sed libero pellentesque ultricies ac
+				sit amet erat. Etiam lacinia ut tellus et condimentum. Praesent et erat nec ex molestie suscipit. Etiam sit amet consectetur
+				mauris, sollicitudin facilisis urna. Sed pretium neque malesuada aliquam cursus. Cras urna massa, dignissim sit amet
+				consectetur et, varius ut dolor. Morbi interdum lacus vel lorem tincidunt, ut fermentum augue venenatis. Fusce tempor
+				nec mi non luctus. Phasellus lacinia leo non dolor consequat placerat tempor et velit. Nullam iaculis semper erat. Nunc
+				a porttitor justo. Phasellus at ligula non risus gravida maximus.</p>
+			<p>Sed eget est at ligula tempor gravida. Mauris vel dignissim libero, non pretium ante. Sed quis feugiat felis, at ultricies
+				sapien. Pellentesque viverra turpis in elementum maximus. Phasellus et purus tincidunt lacus aliquet aliquet. Cras sed
+				neque condimentum, ultrices massa eu, tincidunt massa. Proin sagittis placerat massa, tincidunt tempus velit consequat
+				a. Vestibulum ullamcorper, lorem ut vulputate vehicula, dui purus consequat eros, a sollicitudin justo magna at sem.
+				Curabitur ut neque vel erat finibus elementum euismod vitae diam. Sed consequat eros ut velit sagittis placerat. </p>
+			<p>In eu arcu ut justo consectetur fermentum sit amet vel dui. Donec quis ligula at felis feugiat cursus. Nam posuere lacus
+				non dui viverra eleifend. Donec id dapibus nisl, eu semper purus. Nunc quis justo eu lacus consequat tempus et vel ante.
+				Suspendisse nec arcu dignissim magna rhoncus sodales. Curabitur ac tristique lorem, suscipit iaculis neque. Suspendisse
+				ac gravida urna. Donec auctor aliquam urna sit amet tristique. Quisque blandit mauris vitae metus eleifend pulvinar.
+				Nullam dapibus eleifend erat, id finibus justo viverra sed. Pellentesque viverra in nisi nec bibendum. Maecenas malesuada
+				elementum justo sed convallis.</p>
+			<p>Sed a commodo tellus. Donec mauris dolor, lobortis vitae interdum eget, pharetra vel nibh. Phasellus laoreet sem tempus
+				ipsum faucibus dictum. Aliquam erat volutpat. Phasellus posuere vitae risus id feugiat. Nunc consequat semper sollicitudin.
+				Maecenas vitae lorem sem. Quisque bibendum suscipit arcu vel volutpat. Sed nec sem et leo dictum blandit. </p>
+			<p>Maecenas aliquet enim ultricies rhoncus facilisis. Nunc sed sollicitudin arcu. Duis at quam vehicula arcu feugiat vulputate
+				eget ac nunc. Phasellus euismod, diam eget volutpat mattis, nisl leo fermentum eros, eu ultrices libero sapien sit amet
+				diam. Suspendisse imperdiet leo non eros iaculis, id congue mi commodo. Suspendisse consequat, massa at ultrices pellentesque,
+				libero lacus eleifend lacus, at ornare magna nunc in ipsum. Nullam ac lacinia quam. Aenean scelerisque, mauris quis aliquam
+				facilisis, est ligula vestibulum ligula, in varius mauris nulla vitae lorem. </p>
+
 		</div>
 	</div>
-	
+
 </body>
