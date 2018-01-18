@@ -17,10 +17,14 @@
 			margin: 0;
 			opacity: 1;
 		}
+		
+		nav.sidebar.overlay{
+			position: fixed;
+			z-index: 1;
+		}
 
 		nav.sidebar{
-			transition: width .5s, opacity .5s  .2s;
-			
+			transition: width .5s, opacity .5s  .2s;			
 		}
 
 		nav.sidebar.closed {
@@ -29,13 +33,77 @@
 			opacity: 0;
 			/*transition: width .5s .2s, opacity .5s;*/
 			transition: all .5s;
+			visibility: hidden;
 		}
 
 		div.sidebar-content {
-			background-color: red;
+			background-color: #333;
+			color: #fff;
 			position: fixed;
 			height: 100%;
 			width: inherit;
+			border-right: 3px solid #dedede;
+		}
+		
+		div.sidebar-content > .sidebar-header{
+			text-align: center;
+			padding: 15px 0 10px 0;
+    		border-bottom: 1px solid #dedede;
+    		
+    		width: 100%;
+		}
+		
+		div.sidebar-content > .sidebar-header *{
+			display: inline-block;
+		}
+		
+		div.sidebar-content > .sidebar-header .sidebar-toggle{
+			font-size: 30px;
+			cursor: pointer;
+			text-align: right;
+    		position: relative;    		
+    		top: 3px;
+    		left: 19px;
+    		
+    		background-color: #333;
+    		color: #fff;
+    		border: none;width: 0;
+    		height: 0;
+    		outline: none;
+		}
+		
+		div.sidebar-content > .sidebar-body{
+			list-style: none;
+			margin-top: 20px;	
+			width: 100%;
+			display: inline-block;
+		}
+		
+		div.sidebar-content ul > li a{
+			border-bottom: 1px solid rgba(244,244,244,.2);
+			padding: 5px 10px;
+			display: block;
+			
+		}
+		
+		div.sidebar-content ul > li:last-child a{
+			border-bottom: none;
+		}
+		
+		div.sidebar-content ul > li a:hover{
+			background-color: #111;
+			border-left: 3px solid #fff;
+		}
+		
+		div.sidebar-content ul > li.active a{
+			background-color: #ff9900;
+			border-left: 3px solid #fff;
+		}
+		
+		div.sidebar-content ul > li a,		
+		div.sidebar-content ul > li a:visited{
+			color: #fff;
+			text-decoration: none;
 		}
 
 	</style>
@@ -46,33 +114,45 @@
 <body>
 
 	<div class="grid-container fluid grid-row">
-		<nav class="sidebar grid-col-2 ">
-			<div class="sidebar-content ">
-				<h3>SideBar </h3>
-				<ul>
-					<li>
-						<a href="#">Link</a>
-					</li>
-					<li>
-						<a href="#">Link</a>
-					</li>
-					<li>
-						<a href="#">Link</a>
-					</li>
-					<li>
-						<a href="#">Link</a>
-					</li>
-					<li>
-						<a href="#">Link</a>
-					</li>
-				</ul>
+		<nav class="sidebar grid-col-2"> <!--<nav class="sidebar overlay grid-col-2"> -->
+			<div class="sidebar-content">
+				<div class="sidebar-header">
+					<h3>SideBar</h3>
+					<!--span class="">&times;</span-->
+					<button type="button" class="sidebar-toggle">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</button>
+				</div>
+				
+				
+				<div class="sidebar-body">				
+					<ul>
+						<li class="active">
+							<a href="#">Link</a>
+						</li>
+						<li>
+							<a href="#">Link</a>
+						</li>
+						<li>
+							<a href="#">Link</a>
+						</li>
+						<li>
+							<a href="#">Link</a>
+						</li>
+						<li>
+							<a href="#">Link</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 
 		<div class="main grid-container grid-col-10">
-			<button id="closeSidebar">click</button>
+		<button class="sidebar-toggle">click</button>
 			<script>
-				$("#closeSidebar").click(function () {
+				$(".sidebar-toggle").click(function () {
 					$(".sidebar").toggleClass("closed");
 				});
 			</script>
